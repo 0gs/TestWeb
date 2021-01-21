@@ -1,35 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="css/stils.css">
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Bootstrap Theme Simply Me</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/stils.css">
 </head>
-<body style="font-family:Verdana;color:#aaaaaa;">
+<body>
 
-<div style="background-color:#e5e5e5;padding:15px;text-align:center;">
-  <h1>HELLO WORLD!</h1>
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">My Website</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">WHO?</a></li>
+        <li><a href="#">WHAT?</a></li>
+        <li><a href="#">WHERE?</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+  <h3 class="margin">Who Am I - the &lt;div&gt; tag?</h3>
+  <img src="bird.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
+  <h3>The &lt;div&gt; tag defines a division or a section in an HTML document. 
+      It is also used as a container for HTML elements - which is then styled with CSS or manipulated with JavaScript. 
+      Also, the &lt;div&gt; tag is easily styled by using the class or id attribute.</h3>
 </div>
 
-<div style="overflow:auto">
-  <div class="menu">
-    <a href="#">Link 1.0</a>
-    <a href="#">Link 2.0</a>
-    <a href="#">Link 3.0</a>
-    <a href="#">Link 4.0</a>
-  </div>
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center">
+  <h3 class="margin">What Am I - the &lt;span&gt; tag?</h3>
+  <p>The &lt;span&gt; tag is an inline container used to mark up a part of a text, or a part of a document. 
+      It is easily styled by CSS or manipulated with JavaScript using the class or id attribute. 
+      It is much like the &lt;div&gt; element, but &lt;div&gt; is a block-level element and &lt;span&gt; is an inline element.</p>
+  <a href="#" class="btn btn-default btn-lg">
+    <span class="glyphicon glyphicon-search"></span> Search
+  </a>
+</div>
 
-  <div class="main">
-    <h2>My Website</h2>
-    <p>Here you will find relevant information about my website! :)</p>
-  </div>
-
-  <div class="right">
-    <h2>About</h2>
-    <p>Nothing is here yet.</p>
+<!-- Third Container (Grid) -->
+<div class="container-fluid bg-3 text-center">    
+  <h3 class="margin">Where To Find Me - the &lt;script&gt; tag?</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p>The &lt;script&gt; tag is used to embed executable code or data; this is typically used to embed or refer to JavaScript code.</p>
+      <img src="birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4"> 
+      <p>It worth mentioning that the &lt;script&gt; element either contains scripting statements, or it points to an external script file through the src attribute.</p>
+      <img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4"> 
+      <p>Common uses for JavaScript are image manipulation, form validation, and dynamic changes of content.</p>
+      <img src="birds3.png" class="img-responsive margin" style="width:100%" alt="Image">
+    </div>
   </div>
 </div>
 
-<div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">Template from w3schools.com</div>
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p>Template from <a href="https://www.w3schools.com">www.w3schools.com</a></p> 
+</footer>
 
 </body>
 </html>
