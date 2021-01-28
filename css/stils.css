@@ -6,30 +6,52 @@
   p {font-size: 16px;}
   .margin {margin-bottom: 45px;}
   .bg-1 { 
-    background-color: #5a3fd4; /* Purple */
+    background-color: #5a3fd4;
     color: #ffffff;
   }
   .bg-2 { 
-    background-color: #8f79f2; /* Light Purple */
+    background-color: #8f79f2; 
     color: #ffffff;
   }
   .bg-3 { 
-    background-color: #e4deff; /* White Purple */
+    background-color: #e4deff; 
     color: #555555;
   }
  
-.blur {filter: blur(4px);}
-.invert {filter: invert(100%);}
-.saturate {filter: saturate(10);}
 
-img:hover {
-  transform: scaleX(-1);
+
+#pic1:hover {
+  transform:scaleX(-1);
+  filter: invert(100%);
 }
 
+#snip:hover {
+  transition: transform .8s;
+  transform: scale(1.5);
+}
 .containerx {
   position: relative;
   width: 100%;
 }
+
+#anim {
+  width: 100px;
+  height: 100px;
+  background-color: purple;
+  position: relative;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:500px; top:0px;}
+  50%  {background-color:blue; left:500px; top:400px;}
+  75%  {background-color:green; left:0px; top:400px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
 
 .image {
   opacity: 1;
@@ -65,17 +87,17 @@ img:hover {
   padding: 70px 50px;
 }
 
-   .bg-4 { 
-   background-color: #f7f5ff; /* White Purple */
+  .bg-4 { 
+   background-color: #f7f5ff; 
    color: #180957;
   }
   .bg-5 { 
-    background-color: #302d40; /* Black Purple Gray */
+    background-color: #302d40; 
     color: #fff;
   }
   .container-fluid {
     padding-top: 70px;
-    padding-bottom: 70px;
+    padding-bottom: 50px;
   }
   .navbar {
     padding-top: 15px;

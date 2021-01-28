@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <!-- Theme Made By www.w3schools.com - No Copyright -->
-  <title>Bootstrap Theme Simply Me</title>
+  <title>HTML un CSS</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -22,75 +22,98 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">My Website</a>
+      <a class="navbar-brand" href="#">HTML un CSS</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">WHO?</a></li>
-        <li><a href="#">WHAT?</a></li>
-        <li><a href="#">WHERE?</a></li>
+        <li><a href="#div1">&lt;div&gt;</a></li>
+        <li><a href="#div2">&lt;span&gt;</a></li>
+        <li><a href="#div3">&lt;mark&gt;</a></li>
+        <li><a href="#div4">CSS</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
 <!-- First Container -->
-<div class="container-fluid bg-1 text-center">
-  <h3 class="margin">The &lt;div&gt; tag</h3>
-  <img src="bird.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
-  <h3>The &lt;div&gt; tag defines a division or a section in an HTML document. 
-      It is also used as a container for HTML elements - which is then styled with CSS or manipulated with JavaScript. 
-      Also, the &lt;div&gt; tag is easily styled by using the class or id attribute.</h3>
+
+<div id="div1" class="container-fluid bg-1 text-center">
+    
+  <h3 class="margin">&lt;div&gt;</h3>
+  <img src="snip1.jpg" class="img-responsive margin" style="display:inline" alt="Picture1" width="944" height="196">
+  <h3>&lt;div&gt izmanto, lai izveidotu sadalījumu, sekciju vai atsevišķu daļu.<br>
+      To var arī izmantot kā konteineri, kurā var ievietot HTML elementus, kā arī tos rediģēt.<br>
+      Lietojams ne tikai HTML kodā, bet arī CSS kodā. 
+  </h3>
+  
 </div>
 
+
+
 <!-- Second Container -->
-<div class="container-fluid bg-2 text-center">
-  <h3 class="margin">The &lt;span&gt; tag</h3>
-  <p>The &lt;span&gt; tag is an inline container used to mark up a part of a text, or a part of a document. 
-      It is easily styled by CSS or manipulated with JavaScript using the class or id attribute. 
-      It is much like the &lt;div&gt; element, but &lt;div&gt; is a block-level element and &lt;span&gt; is an inline element.</p>
-  <a href="#" class="btn btn-default btn-lg">
-    <span class="glyphicon glyphicon-search"></span> Search
+<div id="div2" class="container-fluid bg-2 text-center">
+    
+  <h3 class="margin">&lt;span&gt;</h3>
+  <img src="snip2.jpg" class="img-responsive margin" style="display:inline" alt="Picture1" width="484" height="100">
+  
+  <h4>The &lt;span&gt; izmanto, lai rediģētu
+      
+      <span style="color:purple">kādu daļu no teksta</span>
+ 
+  </h4>   
+  
+      <br>
+  <a href="https://www.w3schools.com/tags/tag_span.asp" class="btn btn-default btn-lg">
+    
+      <span class="glyphicon glyphicon-console"></span> Vairāk informācijas
+      
   </a>
 </div>
 
 <!-- Third Container (Grid) -->
-<div class="container-fluid bg-3 text-center">    
-  <h3 class="margin">The &lt;script&gt; tag</h3>
-  <p>The &lt;script&gt; tag is used to embed executable code or data; this is typically used to embed or refer to JavaScript code.
-      Moreover, the &lt;script&gt; element either contains scripting statements, or it points to an external script file through the src attribute.
-      Common uses for JavaScript are image manipulation, form validation, and dynamic changes of content.</p><br>
- </div> 
- <div class="container-fluid bg-4 text-center">    
-  <h2>Move the cursor across the images!</h2><br>
+<div id="div3" class="container-fluid bg-3 text-center">
+    
+  <h3 class="margin">&lt;mark&gt;</h3>
+  <img src="snip3.jpg" class="img-responsive margin" style="display:inline" alt="Picture1" width="291" height="133">
+  
+  <h4>
+      <mark>&lt;mark&gt;</mark> 
+      izmanto, lai 
+      <mark>izceltu</mark> 
+      tekstu vai arī kādu daļu no 
+      <mark>teksta</mark>.
+  </h4>
+  
+  <br>
+ 
+</div>
+
+ <div id="div4" class="container-fluid bg-4 text-center">    
+     <h1>CSS</h1>
+     <br>
   <div class="row">
     <div class="col-sm-4">
-      <h3>CSS filter - blur</h3>
-      <img src="birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-      <div class="containerx">
-        <img class="blur" src="birds1.jpg" alt="Image" style="width:100%">
-        <div class="middle">
-        <div class="text">A surprise.</div>
-        </div>
+      <h3>Attēlu invertēšana un spoguļošana.</h3>
+      <img id="pic1" src="birds1.jpg" class="img-responsive margin" style="display:inline" width="500" height="500" alt="Image1">
+      
+      <h4>Izmantojot CSS, var invertēt attēlus, kā arī spoguļot attēlu.<br>
+          Un iznākums redzams tikai, kad kursors atrodas uz paša attēla.<br>
+          Šo var izmēģināt uz augstāk esošā attēla!! <br><br>
+          CSS kods:<br><br>
+      </h4>
+      <img id="snip" src="snip4.jpg" class="img-responsive margin" style="display:inline" alt="Picture1" width="214" height="79">
+    </div>
+    <div class="col-sm-4"> 
+      <h3>Animāciju veidošana.</h3>
+      <div id="anim">
       </div>
     </div>
     <div class="col-sm-4"> 
-      <h3>CSS filter - saturate</h3>
-      <img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+      <h3>Transformācijas.</h3>
       <div class="containerx">
-      <img class="saturate" src="birds2.jpg" alt="Image" style="width:100%">
+      <img src="birds3.png" class="img-responsive margin" style="display:inline" width="500" height="500" alt="Image">
         <div class="middle">
-        <div class="text">A surprise.</div>
-        </div>
-      </div>      
-    </div>
-    <div class="col-sm-4"> 
-      <h3>CSS filter - invert</h3>
-      <img src="birds3.png" class="img-responsive margin" style="width:100%" alt="Image">
-      <div class="containerx">
-      <img class="invert" src="birds3.png" alt="Image" style="width:100%">
-        <div class="middle">
-        <div class="text">A surprise.</div>
+        <div class="text">Pārsteigums!</div>
         </div>
       </div>
     </div>
@@ -99,7 +122,6 @@
 
 <!-- Footer -->
 <footer class="container-fluid bg-5 text-center">
-  <p>Template from <a href="https://www.w3schools.com">www.w3schools.com</a></p> 
 </footer>
 
 </body>
