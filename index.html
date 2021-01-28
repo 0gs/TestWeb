@@ -40,7 +40,7 @@
 <div id="div1" class="container-fluid bg-1 text-center">
     
   <h3 class="margin">&lt;div&gt;</h3>
-  <img src="snip1.jpg" class="img-responsive margin" style="display:inline" alt="Picture1" width="944" height="196">
+  <img src="snip1.JPG" class="img-responsive margin" style="display:inline" alt="Picture1" width="944" height="196">
   <h3>&lt;div&gt izmanto, lai izveidotu sadalījumu, sekciju vai atsevišķu daļu.<br>
       To var arī izmantot kā konteineri, kurā var ievietot HTML elementus, kā arī tos rediģēt.<br>
       Lietojams ne tikai HTML kodā, bet arī CSS kodā. 
@@ -54,7 +54,7 @@
 <div id="div2" class="container-fluid bg-2 text-center">
     
   <h3 class="margin">&lt;span&gt;</h3>
-  <img src="snip2.jpg" class="img-responsive margin" style="display:inline" alt="Picture1" width="484" height="100">
+  <img src="snip2.JPG" class="img-responsive margin" style="display:inline" alt="Picture1" width="484" height="100">
   
   <h4>The &lt;span&gt; izmanto, lai rediģētu
       
@@ -74,14 +74,15 @@
 <div id="div3" class="container-fluid bg-3 text-center">
     
   <h3 class="margin">&lt;mark&gt;</h3>
-  <img src="snip3.jpg" class="img-responsive margin" style="display:inline" alt="Picture1" width="291" height="133">
+  <img src="snip3.JPG" class="img-responsive margin" style="display:inline" alt="Picture1" width="291" height="133">
   
   <h4>
       <mark>&lt;mark&gt;</mark> 
-      izmanto, lai 
+      izmanto, lai
       <mark>izceltu</mark> 
       tekstu vai arī kādu daļu no 
-      <mark>teksta</mark>.
+      <mark>teksta</mark>.<br><br>
+      Arī ar &lt;span&gt; tagu var izcelt tekstu, tomēr &lt;mark&gt; ir domāts tieši šim mērķim.
   </h4>
   
   <br>
@@ -101,17 +102,38 @@
           Šo var izmēģināt uz augstāk esošā attēla!! <br><br>
           CSS kods:<br><br>
       </h4>
-      <img id="snip" src="snip4.jpg" class="img-responsive margin" style="display:inline" alt="Picture1" width="214" height="79">
+      <img id="snip" src="snip4.JPG" class="img-responsive margin" style="display:inline" alt="Picture1" width="214" height="79">
     </div>
     <div class="col-sm-4"> 
-      <h3>Animāciju veidošana.</h3>
-      <div id="anim">
-      </div>
+      <h3>Animāciju veidošana.</h3>  
+      
+      <div id="boxes">
+        <div class="box red"></div>
+        <div class="box blue"></div>
+        <div class="box green"></div>
+        <div class="box cyan"></div>
+    </div>
+      
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
+       <script src="js/main.js"></script>
+        
+      <hr style="height:393px; visibility:hidden;" />
+      <h4>Izmantojot CSS, var veidot arī dažādas animācijas.<br>
+          Šī animācija ir veidota gan ar CSS, gan arī ar JavaScript palīdzību.<br>
+          <a href="https://medium.com/better-programming/how-to-create-a-simple-kickass-loader-with-anime-js-82b8b570682a">Kā uztaisīt šādu animāciju?</a>
+           <br><br>
+          CSS kods:<br><br>
+      </h4>
+      <img src="snip5.JPG" class="img-responsive margin" style="display:inline" alt="Picture1" width="293" height="677">
+      <h4>JS kods:<br><br></h4>
+      <img src="snip6.JPG" class="img-responsive margin" style="display:inline" alt="Picture1" width="456" height="354">
+      <h4>HTML kods:<br><br></h4>
+      <img id="snip" src="snip7.JPG" class="img-responsive margin" style="display:inline" alt="Picture1" width="735" height="211">
     </div>
     <div class="col-sm-4"> 
       <h3>Transformācijas.</h3>
       <div class="containerx">
-      <img src="birds3.png" class="img-responsive margin" style="display:inline" width="500" height="500" alt="Image">
+      <img id="pic2" src="birds3.png" class="img-responsive margin" style="display:inline" width="500" height="500" alt="Image">
         <div class="middle">
         <div class="text">Pārsteigums!</div>
         </div>

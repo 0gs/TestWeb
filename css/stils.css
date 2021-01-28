@@ -52,6 +52,66 @@
   100% {background-color:red; left:0px; top:0px;}
 }
 
+#anim1 {
+  width: 100px;
+  height: 100px;
+  background-color: purple;
+  position: relative;
+  animation-name: example1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example1 {
+  0%   {background-color:red; left:125px; top:25px;}
+  25%  {background-color:yellow; left:375px; top:25px;}
+  50%  {background-color:blue; left:375px; top:175px;}
+  75%  {background-color:green; left:125px; top:175px;}
+  100% {background-color:red; left:125px; top:25px;}
+}
+
+
+
+#pic2{
+    
+}
+
+
+#boxes {
+
+    text-align: center;
+}
+
+#btns {
+    padding: 25px;
+    background: white;
+    margin-bottom: 40px;
+}
+
+#btns button {
+    background: white;
+    padding: 5px 10px;
+    border: 0px;
+}
+
+#btns .fa {
+    font-size: 30px;
+    color: #0078D7;
+}
+
+.box {
+position: relative;
+width: 100px;
+height: 100px;
+margin: 5px;
+display: inline-block;
+}
+
+.red {background-color: #64dfdf;}
+.blue {background-color: #6930c3;}
+.green {background-color: #252525;}
+.cyan {background-color: #80ffdb;}
+
 
 .image {
   opacity: 1;
