@@ -56,7 +56,7 @@
 #anim {
   width: auto;
   height: 50px;
-  background-color: purple;
+  background-color: #e4deff;
   position: relative;
   animation-name: example;
   animation-duration: 10s;
