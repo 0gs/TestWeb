@@ -32,16 +32,29 @@
   .navbar {
     padding-top: 15px;
     padding-bottom: 15px;
-    border: 0;
+    border: 5;
     border-radius: 0;
     margin-bottom: 0;
     font-size: 12px;
     letter-spacing: 5px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9;
   }
   .navbar-nav  li a:hover {
     color: #1abc9c !important;
   }
 
+  .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
   
 #pic1:hover {
   transform:scaleX(-1);
