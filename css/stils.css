@@ -37,6 +37,9 @@
     margin-bottom: 0;
     font-size: 12px;
     letter-spacing: 5px;
+    position: fixed;
+    top: 0;
+    width: 100%;
     z-index: 9;
   }
   .navbar-nav  li a:hover {
