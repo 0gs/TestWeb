@@ -17,6 +17,10 @@ function create(){
             
             let cell = row.insertCell(j);
             cell.appendChild(button);
+            
+            button.onclick=()=>{
+                button.parentNode.parentNode.parentNode.remove();
+            };
         }   
     }
 }
