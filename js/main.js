@@ -16,4 +16,3 @@ anime ({
     elasticity: 200 
    
 }); 
-playPause.play();
