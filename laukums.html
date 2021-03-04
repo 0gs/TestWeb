@@ -16,11 +16,12 @@ body, html {height: 100%; text-align: center;}
   background-size: cover;
 }
 .grid {
-  width: 40px;
-  background: #CD00CD;
-  height: 40px;
-  color: #ffffff;
+  width: 100px;
+  background: #ffffff;
+  height: 100px;
+  color: #00000;
 }
+
 </style>
 </head>
 <body>
@@ -34,7 +35,7 @@ body, html {height: 100%; text-align: center;}
         <form>
             <h4>Laukuma izmērs</h4>
             <label for "x"></label>
-            <input type = "number" id="x" name="x" value="7" min="1" max="15">
+            <input type = "number" id="x" name="x" value="2" min="2" max="8" step="2">
         </form>
         <br>
         <button id="generate">Izveidot!</button>
@@ -42,6 +43,7 @@ body, html {height: 100%; text-align: center;}
         <table id="laukums"></table>
         
         <script src="js/laukums.js"></script>
+       
 </div>
 
 </body>
