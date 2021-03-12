@@ -1,35 +1,35 @@
 
 let LogoIMG = ["images/youtube.png", "images/word.png", "images/winrar.png", "images/windows.png", "images/whatsapp.png",
-                "images/unity.png", "images/twitter.png", "images/twitch.png", "images/steam.png",  
-                "images/spotify.png", "images/speedtest.png", "images/soundcloud.png", "images/snapchat.png",
-                "images/skype.png", "images/shazam.png", "images/reddit.png", "images/powerpoint.png", 
-                "images/pinterest.png", "images/photoshop.png","images/outlook.png", "images/netbeans.png", 
-                "images/mozilla.png", "images/instagram.png", "images/illustrator.png", "images/flstudio.png", 
-                "images/facebook.png", "images/excel.png", "images/edge.png", "images/duolingo.png", 
-                "images/dropbox.png", "images/discord.png", "images/chrome.png", 
-                 "images/blender.png", "images/audacity.png", "images/apple.png"];              
+    "images/unity.png", "images/twitter.png", "images/twitch.png", "images/steam.png",
+    "images/spotify.png", "images/speedtest.png", "images/soundcloud.png", "images/snapchat.png",
+    "images/skype.png", "images/shazam.png", "images/reddit.png", "images/powerpoint.png",
+    "images/pinterest.png", "images/photoshop.png", "images/outlook.png", "images/netbeans.png",
+    "images/mozilla.png", "images/instagram.png", "images/illustrator.png", "images/flstudio.png",
+    "images/facebook.png", "images/excel.png", "images/edge.png", "images/duolingo.png",
+    "images/dropbox.png", "images/discord.png", "images/chrome.png",
+    "images/blender.png", "images/audacity.png", "images/apple.png"];
 
 let LogoName = ["YouTube", "Word", "WinRaR", "Windows", "Whatsapp", "Unity", "Twitter",
-                "Twitch", "Steam",  "Spotify", "Speedtest", "Soundcloud", "Snapchat",
-                "Skype", "Shazam", "Reddit", "Powerpoint", "Pinterest", "Photoshop",
-                "Outlook", "Netbeans", "Mozilla", "Instagram", "Illustrator", "Flstudio", 
-                "Facebook", "Excel", "Edge", "Duolingo", "Dropbox", "Discord", "Chrome", 
-                 "Blender", "Audacity", "Apple"];
+    "Twitch", "Steam", "Spotify", "Speedtest", "Soundcloud", "Snapchat",
+    "Skype", "Shazam", "Reddit", "Powerpoint", "Pinterest", "Photoshop",
+    "Outlook", "Netbeans", "Mozilla", "Instagram", "Illustrator", "Flstudio",
+    "Facebook", "Excel", "Edge", "Duolingo", "Dropbox", "Discord", "Chrome",
+    "Blender", "Audacity", "Apple"];
 
 var mix = [];
 var buttonItems = [];
 var buttonStack;
 var counter = 0;
 
-function create(){
+function create() {
     let x = document.getElementById("x").value; //grid size
     let table = document.getElementById("laukums"); //table
     table.innerHTML = ''; //old table clear
-    
+
     lalala = x;
-    
+
     mixing();
-    
+
     for (let i = 0; i < x; i++) {
         let row = table.insertRow(i);
         for (let j = 0; j < x; j++) {
@@ -61,7 +61,7 @@ function create(){
                 if (counter == 2) {
                     button.style.background = "";
                     button.innerHTML = "";
-                    button.style.backgroundColor = 'yellow';
+                    button.style.backgroundColor = 'white';
                     counter = 0;
 
                 } else {
