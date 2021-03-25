@@ -1,58 +1,71 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>LAUKUMS</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<style>
-body,h1 {font-family: "Helvetica", sans-serif}
-body, html {height: 100%; text-align: center;
-            font-family: "Helvetica", sans-serif;}
-.bgimg {
-  background-color: #5a3fd4;
-  min-height: 100%;
-  background-position: center;
-  background-size: cover;
-  font-family: "Helvetica", sans-serif;
-}
-.grid {
-  width: 100px;
-  background: #ffffff;
-  height: 100px;
-  font-family: "Helvetica", sans-serif;
-  border-style: none;
-}
+    <head>
+        <title>LAUKUMS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css">
+        <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+        <style>
+            body,h1 {font-family: "Helvetica", sans-serif}
+            body, html {height: 100%; text-align: center;
+                        font-family: "Helvetica", sans-serif;}
+            .bgimg {
+                background-color: #5a3fd4;
+                min-height: 100%;
+                background-position: center;
+                background-size: cover;
+                font-family: "Helvetica", sans-serif;
+            }
+            .grid {
+                width: 100px;
+                background: #ffffff;
+                height: 100px;
+                font-family: "Helvetica", sans-serif;
+                border-style: none;
+            }
 
-.grid:active{
-    border-style: solid;
-}
-</style>
-</head>
-<body>
+            .grid:active{
+                border-style: solid;
+            }
+            body{
+                overflow:hidden;
+            }
+        </style>
+    </head>
+    <body>
 
-<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-  <div class="w3-display-topleft w3-padding-large w3-xlarge">
-    laukums.html
-  </div>
-  <div class="w3-display-middle">
-    <div id="field">
-        <form>
-            <h4>Laukuma izmērs</h4>
-            <label for "x"></label>
-            <input type = "number" id="x" name="x" value="2" min="2" max="6" step="2" style="margin-bottom: 5px;">
-        </form>
-    </div>
-        <br>
-        <button id="generate">START</button>
-        <div><br></div>
-        <div id="tablediv">
-        <table id="laukums"></table>
+        <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+            <div class="w3-display-topleft w3-padding-large w3-xlarge">
+                laukums.html
+            </div>
+            <div class="w3-display-middle">
+
+
+                <div id="field">
+                    <form>
+                        <h4>Laukuma izmērs</h4>
+                        <label for "x"></label>
+                        <input type = "number" id="x" name="x" value="2" min="2" max="6" step="2" style="margin-bottom: 5px;">
+                    </form>
+                </div>
+                <br>
+                <button id="generate">START</button>
+                <div><br></div>
+                <div id="tablediv">
+                    <table id="laukums"></table>
+                </div>
+            </div>
+
+            <script src="js/laukums.js"></script>
+
+            <div id="ex1" class="modal">
+                <p id="winText">Apsveicu!!!</p>
+            </div>
         </div>
-</div>
-    
-    <script src="js/laukums.js"></script>
-
-</body>
+    </body>
 </html>
