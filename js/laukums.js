@@ -79,10 +79,11 @@ doThis.addEventListener("click", create);
 
 function mixingItems() {
     mixArray = [];
+    var stek = [];
     for (let i = 0; i < (numX * numX * 0.5); i++) {
-//        let lol = Math.floor(Math.random() * Math.floor(30));
+        //let lol = Math.floor(Math.random() * Math.floor(30));
         mixArray.push(LogoIMG[i]);
-        mixArray.push(LogoName[i]);
+        mixArray.push(LogoName[i]); 
     }
     for (let i = 0; i < mixArray.length; i++) {
         var rand = Math.floor(Math.random() * mixArray.length);
@@ -159,7 +160,7 @@ function victory() {
             let timeMin = timeSec / 60 - (timeSec / 60) % 1;
             timeSec = Math.round((timeSec - 60 * timeMin) * 1000) / 1000;
             let endResultTime1 = document.getElementById("winText");
-            endResultTime1.innerHTML = "Apsveicu, tu pabeidzi spēli! Tavs laiks ir " + timeMin + " un " + timeSec + " sekundes.";
+            endResultTime1.innerHTML = "Apsveicu, tu pabeidzi spēli! Tavs laiks ir " + timeMin + " minūtes un " + timeSec + " sekundes.";
             $("#ex1").modal("show");
         } else {
             let endResultTime2 = document.getElementById("winText");
