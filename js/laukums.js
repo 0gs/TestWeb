@@ -79,11 +79,11 @@ doThis.addEventListener("click", create);
 
 function mixingItems() {
     mixArray = [];
-    var stek = [];
+    let xqxq = randomUniqueNum(30, (numX * numX * 0.5));
+//    console.log(xqxq);
     for (let i = 0; i < (numX * numX * 0.5); i++) {
-        //let lol = Math.floor(Math.random() * Math.floor(30));
-        mixArray.push(LogoIMG[i]);
-        mixArray.push(LogoName[i]); 
+        mixArray.push(LogoIMG[xqxq[i]]);
+        mixArray.push(LogoName[xqxq[i]]);
     }
     for (let i = 0; i < mixArray.length; i++) {
         var rand = Math.floor(Math.random() * mixArray.length);
@@ -91,6 +91,20 @@ function mixingItems() {
         mixArray[rand] = mixArray[i];
         mixArray[i] = tmp;
     }
+}
+
+function randomUniqueNum(range, outputCount) {
+    let arr = []
+    for (let gh = 1; gh <= range; gh++) {
+        arr.push(gh)
+    }
+    let result = [];
+    for (let gh = 1; gh <= outputCount; gh++) {
+        const random = Math.floor(Math.random() * (range - gh));
+        result.push(arr[random]);
+        arr[random] = arr[range - gh];
+    }
+    return result;
 }
 
 function switchImages(w) {
