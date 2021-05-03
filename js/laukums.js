@@ -190,7 +190,7 @@ function victory() {
               
               fetch("https://dog.ceo/api/breeds/image/random")  
               .then(response => response.json())
-              .then((response) =>{ var img = new Image(); img.src = response["message"]; });
+              .then((response) =>{ image = new Image(300, 300); image.src = response["message"]; document.getElementById("ex1").appendChild(image)});
       
               $("#ex1").modal("show");
         }
