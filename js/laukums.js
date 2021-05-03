@@ -178,15 +178,20 @@ function victory() {
             $("#ex1").modal("show");
         } else {
             let endResultTime2 = document.getElementById("winText");
-            endResultTime2.innerHTML = "Apsveicu, tu pabeidzi spēli! Tavs laiks ir " + timeSec + " sekundes.";
-            $("#ex1").modal("show");
+//            endResultTime2.innerHTML = "Apsveicu, tu pabeidzi spēli! Tavs laiks ir " + timeSec + " sekundes.";
+//            $("#ex1").modal("show");
 
               fetch("https://api.chucknorris.io/jokes/random")  
               .then(res => res.json())
               .then((res) =>{
-                endResultTime2.innerHTML = `Apsveicu, tu pabeidzi spēli! Tavs laiks ir " + timeSec + " sekundes.
-                Tagad tu uzzini arī šo faktu par Čaku Norisu - ${res["value"]}`;
-              }
+                endResultTime2.innerHTML = `Apsveicu, tu pabeidzi spēli! Tavs laiks ir ${timeSec} sekundes.
+                Tagad tu uzzini arī šo faktu par Čaku Norisu --> ${res["value"]}`;
+              });
+              
+              fetch("https://dog.ceo/api/breeds/image/random")  
+              .then(response => response.json())
+              .then((response) =>{ var img = new Image(); img.src = response["message"]; });
+      
               $("#ex1").modal("show");
         }
     }
