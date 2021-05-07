@@ -26,6 +26,7 @@ var startTime;
 var clickedFirst;
 var x;
 var numX;
+image = new Image(300, 300);
 
 function create() {
     newArray = [];
@@ -180,7 +181,6 @@ function victory() {
             let endResultTime2 = document.getElementById("winText");
 //            endResultTime2.innerHTML = "Apsveicu, tu pabeidzi spēli! Tavs laiks ir " + timeSec + " sekundes.";
 //            $("#ex1").modal("show");
-
               fetch("https://api.chucknorris.io/jokes/random")  
               .then(res => res.json())
               .then((res) =>{
@@ -190,7 +190,7 @@ function victory() {
               
               fetch("https://dog.ceo/api/breeds/image/random")  
               .then(response => response.json())
-              .then((response) =>{ image = new Image(300, 300); image.src = response["message"]; document.getElementById("ex1").appendChild(image)});
+              .then((response) =>{ image.src = response["message"]; document.getElementById("ex1").appendChild(image)});
       
               $("#ex1").modal("show");
         }
